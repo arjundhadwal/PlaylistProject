@@ -34,6 +34,9 @@ public class Playlist{
        * Examining all Songs (a String return or void print makes sense here)
        * Examining a sublist of all liked songs
        * Determining the total duration of all songs
-       * Removing all unliked songs from the playlist (careful with this one!)
+       * Removing all unliked songs from the playlist (careful with this one!
        */
+      public void Add(Song mySong){
+        playlist.add(mySong);
+      }
 }
