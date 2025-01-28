@@ -51,4 +51,11 @@ public class Playlist{
           }
         }
       }
+
+      public void ExaminingSongs(Song mySong){
+        System.out.println("Showing all songs: ");
+        for(int i = 0; i<playlist.size();i++){
+          System.out.println(playlist.get(i));
+        }
+      }
 }
