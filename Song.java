@@ -69,6 +69,10 @@ public class Song {
         isLiked =false;
       }
 
+      public boolean isLiked(){
+        return isLiked();
+      }
+
       public String toString(){
         return(name + " by "+artist+"("+(length/60)+":"+(length%60)+")");
       }
