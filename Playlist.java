@@ -9,7 +9,8 @@ public class Playlist{
      * Fields-- This will likely just need to be the ArrayList of Songs. Reference our previous problems
      * (CarDealership, Zoo) for structure on how this will look
      */
-    private ArrayList<Song> playlist = new ArrayList<Song>();
+    private ArrayList<Song> playlist;
+    private int totalDuration = 0;
     
 
 
@@ -18,8 +19,8 @@ public class Playlist{
       * Constructor-- this doesn't need any parameters. You should just initialize the ArrayList and
       * then use additional methods to add Songs in one-by-one
       */
-      public Playlist(ArrayList<Song> Skib) {
-        playlist = Skib;
+      public Playlist() {
+      playlist  = new ArrayList<Song>();
       }
 
 
@@ -39,19 +40,15 @@ public class Playlist{
         playlist.add(mySong);
       }
 
-      public void LikeSong(Song mySong){
-        mySong.like();
+      public void LikeSong(int index){
+        playlist.get(index).like();
       }
 
-      public void RemoveSong(Song mySong){
-        for(int i = 0; i<playlist.size();i++){
-          if(playlist.get(i).equals(mySong)){
-            playlist.remove(i);
-          }
-        }
+      public void RemoveSong(int index){
+        playlist.remove(index);
       }
 
-      public void ExaminingSongs(Song mySong){
+      public void ExaminingSongs(){
         System.out.println("Showing all songs: ");
         for(int i = 0; i<playlist.size();i++){
           System.out.println(playlist.get(i));
@@ -71,12 +68,11 @@ public class Playlist{
 
 
       public void TotalDuration(){
-        System.out.println("Listing Songs and they durations");
-        for(int i = 0; i<playlist.size();i++){
-          int x = playlist.get(i).getLength();
-          String y = playlist.get(i).getName();
-          System.out.println(y + ", " + x + "minutes");
+        totalDuration = 0;
+        for(int i = 0; i<playlist.size(); i++){
+          totalDuration+=playlist.get(i).getLength();
         }
+        System.out.println("Total duration of the songs: "+(totalDuration/60)+" mins "+(totalDuration%60)+" seconds");
       }
       
 
@@ -85,13 +81,14 @@ public class Playlist{
 
 
       public void removeUnlikedSongs(){
-        System.out.println("Removing all non-liked songs");
         for(int i = 0; i<playlist.size();i++){
           boolean x = playlist.get(i).isLiked();
           if(x == false){
             playlist.remove(i);
+            i--;
           }
         }
+        System.out.println("Removed all non-liked songs");
          
       }
 
