@@ -10,7 +10,7 @@ public class Playlist{
      * Fields-- This will likely just need to be the ArrayList of Songs. Reference our previous problems
      * (CarDealership, Zoo) for structure on how this will look
      */
-
+    
 
 
 
@@ -32,8 +32,5 @@ public class Playlist{
        * Determining the total duration of all songs
        * Removing all unliked songs from the playlist (careful with this one!)
        */
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 2156a02 (saving stuff in main 3)
