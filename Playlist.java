@@ -10,7 +10,8 @@ public class Playlist{
      * Fields-- This will likely just need to be the ArrayList of Songs. Reference our previous problems
      * (CarDealership, Zoo) for structure on how this will look
      */
-
+    private ArrayList<Song> playlist = new ArrayList<Song>();
+    
 
 
 
@@ -18,6 +19,9 @@ public class Playlist{
       * Constructor-- this doesn't need any parameters. You should just initialize the ArrayList and
       * then use additional methods to add Songs in one-by-one
       */
+      public Playlist(ArrayList<Song> Skib) {
+        playlist = Skib;
+      }
 
 
       
@@ -32,8 +36,4 @@ public class Playlist{
        * Determining the total duration of all songs
        * Removing all unliked songs from the playlist (careful with this one!)
        */
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 2156a02 (saving stuff in main 3)
