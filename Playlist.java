@@ -39,4 +39,8 @@ public class Playlist{
       public void Add(Song mySong){
         playlist.add(mySong);
       }
+
+      public void LikeSong(Song mySong){
+        mySong.like();
+      }
 }
