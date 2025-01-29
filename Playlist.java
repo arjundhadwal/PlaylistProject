@@ -110,4 +110,17 @@ public class Playlist{
           }
         }
       }
+
+      public void removeUnlikedSongs(){
+        System.out.println("Removing all non-liked songs");
+        for(int i = 0; i<playlist.size();i++){
+          boolean x = playlist.get(i).isLiked();
+          if(x == false){
+            playlist.remove(i);
+          }
+        }
+         
+      }
+
+    
 }
