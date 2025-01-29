@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.*;
 
 /**
  * The Playlist class, which will keep track of a playlist of Song objects
