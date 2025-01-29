@@ -69,6 +69,22 @@ public class Playlist{
         }
       }
 
+
+
+      public void TotalDuration(){
+        System.out.println("Listing Songs and they durations");
+        for(int i = 0; i<playlist.size();i++){
+          int x = playlist.get(i).getLength();
+          String y = playlist.get(i).getName();
+          System.out.println(y + ", " + x + "minutes");
+        }
+      }
+      
+
+
+
+
+
       public void removeUnlikedSongs(){
         System.out.println("Removing all non-liked songs");
         for(int i = 0; i<playlist.size();i++){
