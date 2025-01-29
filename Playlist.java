@@ -58,4 +58,14 @@ public class Playlist{
           System.out.println(playlist.get(i));
         }
       }
+
+      public void ExaminingLikedSongs(){
+        System.out.println("Showing all liked songs: ");
+        for(int i = 0; i<playlist.size();i++){
+          boolean x = playlist.get(i).isLiked();
+          if(x == true){
+            System.out.println(playlist.get(i));
+          }
+        }
+      }
 }
