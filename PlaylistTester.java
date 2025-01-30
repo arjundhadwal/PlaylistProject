@@ -10,13 +10,15 @@ public class PlaylistTester {
     public static void main(String[] args) {
         System.out.println("Initializing a Playlist...\n");
         //Make your playlist here
-
+        Playlist p = new Playlist();
         System.out.println("Adding songs to the Playlist...\n");
         /**
          * Add some songs here. Note that the format for adding a Song to a Playlist p
          * is something like...
          * p.addSong(new Song(..., ..., ...))
          */
+
+         p.Add(new Song("Thick Of It", "KSI", 300));
 
 
 
