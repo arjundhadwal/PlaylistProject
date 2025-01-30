@@ -19,6 +19,12 @@ public class PlaylistTester {
          */
 
          p.Add(new Song("Thick Of It", "KSI", 300));
+         p.Add(new Song("Get lucky", "Will Ferell, Daft Punk", 143));
+         p.Add(new Song("Rising Dawn", "Echo Pulse", 210));
+         p.Add(new Song("Lost in the Waves", "Ocean Dreams", 245));
+         p.Add(new Song("Electric Sky", "Neon Horizon", 220));
+         p.Add(new Song("Chasing Shadows", "Lunar Pulse", 180));
+         p.Add(new Song("Fading Light", "Silent Echoes", 260));
 
 
 
