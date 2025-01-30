@@ -20,11 +20,14 @@ public class PlaylistTester {
 
          p.Add(new Song("Thick Of It", "KSI", 300));
          p.Add(new Song("Get lucky", "Will Ferell, Daft Punk", 143));
-         p.Add(new Song("Rising Dawn", "Echo Pulse", 210));
-         p.Add(new Song("Lost in the Waves", "Ocean Dreams", 245));
-         p.Add(new Song("Electric Sky", "Neon Horizon", 220));
-         p.Add(new Song("Chasing Shadows", "Lunar Pulse", 180));
-         p.Add(new Song("Fading Light", "Silent Echoes", 260));
+         p.Add(new Song("Shape of You", "Ed Sheeran", 233));
+         p.Add(new Song("Blinding Lights", "The Weeknd", 200));
+         p.Add(new Song("Levitating", "Dua Lipa", 203));
+         p.Add(new Song("Bad Guy", "Billie Eilish", 194));
+         p.Add(new Song("Uptown Funk", "Mark Ronson ft. Bruno Mars", 269));
+         p.Add(new Song("Rolling in the Deep", "Adele", 228));
+         p.Add(new Song("Thank U, Next", "Ariana Grande", 228));
+         p.Add(new Song("Watermelon Sugar", "Harry Styles", 174));
 
 
 
