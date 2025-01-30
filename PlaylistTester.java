@@ -19,7 +19,7 @@ public class PlaylistTester {
          */
 
          p.Add(new Song("Thick Of It", "KSI", 300));
-         p.Add(new Song("Get lucky", "Will Ferell, Daft Punk", 143));
+         p.Add(new Song("Get lucky", "Daft Punk", 143));
          p.Add(new Song("Shape of You", "Ed Sheeran", 233));
          p.Add(new Song("Blinding Lights", "The Weeknd", 200));
          p.Add(new Song("Levitating", "Dua Lipa", 203));
@@ -32,11 +32,11 @@ public class PlaylistTester {
 
 
         System.out.println("Printing the songs...\n");
-        //Print out all the songs in the playlist to verify it's working correctly
+        p.ExaminingSongs();
 
 
         System.out.println("\nLiking the songs in position X, Y, Z, etc....\n");
-        //Once your songs are 'liked', this should be reflected in the next printout
+        p.LikeSong();
 
 
         System.out.println("Printing the songs...\n");
