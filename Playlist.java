@@ -12,6 +12,9 @@ public class Playlist{
     private ArrayList<Song> playlist;
     private int totalDuration = 0;
     
+    private ArrayList<Song> playlist;
+    private int totalDuration = 0;
+    
 
 
 
@@ -73,53 +76,6 @@ public class Playlist{
           totalDuration+=playlist.get(i).getLength();
         }
         System.out.println("Total duration of the songs: "+(totalDuration/60)+" mins "+(totalDuration%60)+" seconds");
-      }
-      
-
-
-
-
-
-      public void removeUnlikedSongs(){
-        for(int i = 0; i<playlist.size();i++){
-          boolean x = playlist.get(i).isLiked();
-          if(x == false){
-            playlist.remove(i);
-            i--;
-          }
-        }
-        System.out.println("Removed all non-liked songs");
-         
-      }
-
-    
-
-      public void ExaminingSongs(Song mySong){
-        System.out.println("Showing all songs: ");
-        for(int i = 0; i<playlist.size();i++){
-          System.out.println(playlist.get(i));
-        }
-      }
-
-      public void ExaminingLikedSongs(){
-        System.out.println("Showing all liked songs: ");
-        for(int i = 0; i<playlist.size();i++){
-          boolean x = playlist.get(i).isLiked();
-          if(x == true){
-            System.out.println(playlist.get(i));
-          }
-        }
-      }
-
-
-
-      public void TotalDuration(){
-        System.out.println("Listing Songs and they durations");
-        for(int i = 0; i<playlist.size();i++){
-          int x = playlist.get(i).getLength();
-          String y = playlist.get(i).getName();
-          System.out.println(y + ", " + x + "minutes");
-        }
       }
       
 
