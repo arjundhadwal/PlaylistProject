@@ -11,12 +11,6 @@ public class Playlist{
      */
     private ArrayList<Song> playlist;
     private int totalDuration = 0;
-    
-    private ArrayList<Song> playlist;
-    private int totalDuration = 0;
-    
-
-
 
      /**
       * Constructor-- this doesn't need any parameters. You should just initialize the ArrayList and
