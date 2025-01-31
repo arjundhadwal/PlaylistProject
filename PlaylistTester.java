@@ -18,7 +18,7 @@ public class PlaylistTester {
          * p.addSong(new Song(..., ..., ...))
          */
 
-         p.Add(new Song("Thick Of It", "KSI", 300)); //0
+         p.Add(new Song("Thick Of It", "KSI", 178)); //0
          p.Add(new Song("Get lucky", "Daft Punk", 143)); //1
          p.Add(new Song("Shape of You", "Ed Sheeran", 233)); //2
          p.Add(new Song("Blinding Lights", "The Weeknd", 200)); //3
@@ -44,24 +44,30 @@ public class PlaylistTester {
         p.ExaminingSongs();
 
         System.out.println("\nRemoving the song in position 0, 5, 9 \n");
-
+        p.RemoveSong(0);
+        p.RemoveSong(5);
+        p.RemoveSong(9);
 
         System.out.println("Printing the songs...\n");
+        p.ExaminingSongs();
 
 
         System.out.println("\nPrinting only the liked songs...\n");
         //Your Playlist should be able to do this without looping while in main!
+        p.ExaminingLikedSongs();
 
 
         System.out.println("\nPrinting the total duration of all songs...\n");
         //Note that the format should look something like minutes:seconds
-
+        p.TotalDuration();
 
         System.out.println("\nRemoving all unliked songs from the playlist...\n");
         //This should be doable with a single method call
+        p.removeUnlikedSongs();
 
 
         System.out.println("Printing all songs...\n");
         //This should now look like only the liked songs list from before
+        p.ExaminingSongs();
     }
 }
