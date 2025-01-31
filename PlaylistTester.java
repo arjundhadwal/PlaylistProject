@@ -35,15 +35,15 @@ public class PlaylistTester {
         p.ExaminingSongs();
 
 
-        System.out.println("\nLiking the songs in position X, Y, Z, etc....\n");
+        System.out.println("\nLiking the songs in position 2, 6, 7 \n");
         p.LikeSong(2); //liking Shape Of You
         p.LikeSong(6); //liking Uptown Funk
         p.LikeSong(7); //liking Rolling in the Deep
 
         System.out.println("Printing the songs...\n");
+        p.ExaminingSongs();
 
-
-        System.out.println("\nRemoving the song in position A, B, C, etc...\n");
+        System.out.println("\nRemoving the song in position 0, 5, 9 \n");
 
 
         System.out.println("Printing the songs...\n");
