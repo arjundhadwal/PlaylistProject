@@ -74,7 +74,11 @@ public class Song {
       }
 
       public String toString(){
-        return(name + " by "+artist+"("+(length/60)+":"+(length%60)+") Liked: "+isLiked);
+        if(isLiked){
+        return(name + " by "+artist+"("+(length/60)+":"+(length%60)+") -- Liked");
+      } else{
+        return(name + " by "+artist+"("+(length/60)+":"+(length%60)+")");
       }
+    }
 
 }

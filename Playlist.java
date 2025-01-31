@@ -43,12 +43,8 @@ public class Playlist{
         playlist.get(index).like();
       }
 
-      public void RemoveSong(Song mySong){
-        for(int i = 0; i<playlist.size();i++){
-          if(playlist.get(i).equals(mySong)){
-            playlist.remove(i);
-          }
-        }
+      public void RemoveSong(int index){
+        playlist.remove(index);
       }
 
       public void ExaminingSongs(){
