@@ -39,8 +39,8 @@ public class Playlist{
         playlist.add(mySong);
       }
 
-      public void LikeSong(Song mySong){
-        mySong.like();
+      public void LikeSong(int index){
+        playlist.get(index).like();
       }
 
       public void RemoveSong(Song mySong){
