@@ -10,7 +10,7 @@ public class Playlist{
      * Fields-- This will likely just need to be the ArrayList of Songs. Reference our previous problems
      * (CarDealership, Zoo) for structure on how this will look
      */
-    private ArrayList<Song> playlist = new ArrayList<Song>();
+    private ArrayList<Song> playlist;
     
 
 
@@ -20,6 +20,7 @@ public class Playlist{
       * then use additional methods to add Songs in one-by-one
       */
       public Playlist() {
+      playlist  = new ArrayList<Song>();
       }
 
 

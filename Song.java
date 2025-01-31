@@ -70,7 +70,7 @@ public class Song {
       }
 
       public boolean isLiked(){
-        return isLiked();
+        return isLiked;
       }
 
       public String toString(){

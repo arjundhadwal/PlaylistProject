@@ -44,9 +44,9 @@ public class PlaylistTester {
         p.ExaminingSongs();
 
         System.out.println("\nRemoving the song in position 0, 5, 9 \n");
-        p.RemoveSong(0);
-        p.RemoveSong(5);
-        p.RemoveSong(9);
+        p.RemoveSong(0); //removing Thick Of It (it is a bad song)
+        p.RemoveSong(4); // removing Bad Guy (accounting for index shift when removing)
+        p.RemoveSong(7); //removing Watermelon Sugar (accounting for index shift when removing)
 
         System.out.println("Printing the songs...\n");
         p.ExaminingSongs();
