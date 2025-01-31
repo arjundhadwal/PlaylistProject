@@ -73,7 +73,7 @@ public class Playlist{
         for(int i = 0; i<playlist.size(); i++){
           totalDuration+=playlist.get(i).getLength();
         }
-        System.out.println("Total duration of the songs: "+(totalDuration/60)+(totalDuration%60));
+        System.out.println("Total duration of the songs: "+(totalDuration/60)+" mins "+(totalDuration%60)+" seconds");
       }
       
 
@@ -82,7 +82,6 @@ public class Playlist{
 
 
       public void removeUnlikedSongs(){
-        System.out.println("Removing all non-liked songs");
         for(int i = 0; i<playlist.size();i++){
           boolean x = playlist.get(i).isLiked();
           if(x == false){
@@ -90,6 +89,7 @@ public class Playlist{
             i--;
           }
         }
+        System.out.println("Removed all non-liked songs");
          
       }
 
