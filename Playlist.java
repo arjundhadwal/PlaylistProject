@@ -133,6 +133,7 @@ public class Playlist{
           boolean x = playlist.get(i).isLiked();
           if(x == false){
             playlist.remove(i);
+            i--;
           }
         }
          
