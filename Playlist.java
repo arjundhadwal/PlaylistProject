@@ -11,6 +11,7 @@ public class Playlist{
      * (CarDealership, Zoo) for structure on how this will look
      */
     private ArrayList<Song> playlist;
+    private int totalDuration = 0;
     
 
 
@@ -68,12 +69,11 @@ public class Playlist{
 
 
       public void TotalDuration(){
-        System.out.println("Listing Songs and they durations");
-        for(int i = 0; i<playlist.size();i++){
-          int x = playlist.get(i).getLength();
-          String y = playlist.get(i).getName();
-          System.out.println(y + ", " + x + "minutes");
+        totalDuration = 0;
+        for(int i = 0; i<playlist.size(); i++){
+          totalDuration+=playlist.get(i).getLength();
         }
+        System.out.println("Total duration of the songs: "+(totalDuration/60)+(totalDuration%60));
       }
       
 
@@ -87,6 +87,7 @@ public class Playlist{
           boolean x = playlist.get(i).isLiked();
           if(x == false){
             playlist.remove(i);
+            i--;
           }
         }
          
