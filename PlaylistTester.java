@@ -18,16 +18,16 @@ public class PlaylistTester {
          * p.addSong(new Song(..., ..., ...))
          */
 
-         p.Add(new Song("Thick Of It", "KSI", 300));
-         p.Add(new Song("Get lucky", "Daft Punk", 143));
-         p.Add(new Song("Shape of You", "Ed Sheeran", 233));
-         p.Add(new Song("Blinding Lights", "The Weeknd", 200));
-         p.Add(new Song("Levitating", "Dua Lipa", 203));
-         p.Add(new Song("Bad Guy", "Billie Eilish", 194));
-         p.Add(new Song("Uptown Funk", "Mark Ronson ft. Bruno Mars", 269));
-         p.Add(new Song("Rolling in the Deep", "Adele", 228));
-         p.Add(new Song("Thank U, Next", "Ariana Grande", 228));
-         p.Add(new Song("Watermelon Sugar", "Harry Styles", 174));
+         p.Add(new Song("Thick Of It", "KSI", 300)); //0
+         p.Add(new Song("Get lucky", "Daft Punk", 143)); //1
+         p.Add(new Song("Shape of You", "Ed Sheeran", 233)); //2
+         p.Add(new Song("Blinding Lights", "The Weeknd", 200)); //3
+         p.Add(new Song("Levitating", "Dua Lipa", 203)); //4
+         p.Add(new Song("Bad Guy", "Billie Eilish", 194)); //5
+         p.Add(new Song("Uptown Funk", "Mark Ronson ft. Bruno Mars", 269)); //6
+         p.Add(new Song("Rolling in the Deep", "Adele", 228)); //7
+         p.Add(new Song("Thank U, Next", "Ariana Grande", 228)); //8
+         p.Add(new Song("Watermelon Sugar", "Harry Styles", 174)); //9
 
 
 
@@ -36,8 +36,9 @@ public class PlaylistTester {
 
 
         System.out.println("\nLiking the songs in position X, Y, Z, etc....\n");
-        p.LikeSong();
-
+        p.LikeSong(2); //liking Shape Of You
+        p.LikeSong(6); //liking Uptown Funk
+        p.LikeSong(7); //liking Rolling in the Deep
 
         System.out.println("Printing the songs...\n");
 
